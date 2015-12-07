@@ -1,0 +1,155 @@
+
+.chat {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #dddddd;
+    padding: 1em;
+}
+
+.chat hr {
+    display: block;
+    clear: left;
+    margin: 0;
+
+    height: 1px;
+    background: none;
+}
+
+.chat .group {
+    background: #cfcfcf;
+    margin-left:-1em;
+    margin-right: -1em;
+    margin-top: -1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    
+}
+
+.chat .who {
+    display: block;
+    color: gray;
+    clear: both;
+    font-size: 0.6em;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+.chat .who-alt {
+    margin-right: 2em;
+    float: right;
+}
+
+.chat .chatdate {
+    clear: both;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+.chat .bubble {
+  box-sizing: border-box; 
+  float: left;
+  width: auto;
+  max-width: 80%;
+  position: relative;  
+  clear: both; 
+
+  background: #ffffff;
+  
+  border: none; /* solid 1px rgba(0,0,0,0.5);*/
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  
+  margin-bottom: 20px;
+  padding: 6px 20px;
+  color: #000;
+
+  word-wrap: break-word;
+}
+
+.chat .bubble:before, .chat .bubble:after {
+  border-radius: 20px / 5px;
+  content: '';
+  display: block;
+  position: absolute;  
+}
+.chat .bubble:before {
+    border: none; 
+  border-bottom-color: rgba(0,0,0,0.5);
+  bottom: 0px;
+  left: -7px;
+  z-index: -2;
+}
+.chat .bubble:after {
+    border: 8px solid transparent;
+  border-bottom-color: #ffffff;  
+  bottom: 1px;
+  left: -5px;
+}
+
+
+.chat .bubble-alt {
+  float: right;
+}
+.chat .bubble-alt:before {
+  left: auto;
+  right: -7px;
+}
+.chat .bubble-alt:after {
+  left: auto;
+  right: -4px;
+}
+
+.chat .bubble p {
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+}
+
+
+.chat .bubble img {
+    border: none;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+.chat .green {
+  background: #7acd47;
+}
+.chat .green:after {
+  border-bottom-color: #7acd47;
+}
+
+
+.chat .white {
+  background: #efefef;
+}
+.chat .white:after {
+  border-bottom-color: #efefef;
+}
+
+
+.chat .yellow {
+  background: #fcf3c3;
+}
+.chat .yellow:after {
+  border-bottom-color: #fcf3c3;
+}
+
+.chat .red {
+  background: #ea8378;
+}
+.chat .red:after {
+  border-bottom-color: #ea8378;
+}
+
+
+.chat .pink {
+    background: #ffbee3;
+}
+.chat .pink:after {
+  border-bottom-color: #ffbee3;
+}

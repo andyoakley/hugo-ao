@@ -1,0 +1,12 @@
+name = "Andy Oakley"
+license = "MIT"
+licenselink = "//opensource.org/licenses/MIT"
+description = "Styling for Andy's blog"
+homepage = "//andyoakley.com"
+tags = ["blog"]
+features = ["blog"]
+
+[author]
+  name = "andyoakley"
+  homepage = "//andyoakley.com"
+

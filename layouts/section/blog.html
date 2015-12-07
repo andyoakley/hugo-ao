@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+
+<p class="lede">
+  {{ .Site.Params.description }}
+</p>
+
+<main class="posts">
+
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ range $paginator.Pages }}
+    <p>{{ .Render "content" }}</p>
+    {{ partial "separator.html" . }}
+  {{ end }}
+
+</main>
+
+{{ partial "pagination.html" . }}
+
+
+{{ partial "tags.html" . }}
+
+
+{{ partial "foot.html" . }}

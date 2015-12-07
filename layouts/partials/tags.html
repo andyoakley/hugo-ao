@@ -1,0 +1,16 @@
+{{ if not (eq (len .Site.Taxonomies.tags) 0) }}
+ 
+<div class="widget" style="text-align: center">
+
+    Browse by tag <br />
+
+            {{ range $name, $items := .Site.Taxonomies.tags }}
+
+                <a class="category-list-link" href="/tags/{{ $name }}" style="background: #dddddd; color: black; padding-left:0.5em; padding-right: 0.5em;  margin: 0.15em; border-bottom: none; font-size: 1em">{{ $name }}</a>
+
+            {{ end }}
+
+    </div>
+
+{{ end }}
+

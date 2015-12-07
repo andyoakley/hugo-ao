@@ -1,0 +1,266 @@
+html {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:#fff; 
+    font-family: andy;
+    color:#222;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: andy;
+    src: local('-apple-system'),
+    local(".SFNSText-Regular"),
+    local("Segoe UI"),
+    local("San Francisco"),
+    local("Helvetica Neue"),
+    local("Roboto"),
+    local("DejaVu Sans"),
+    local("sans-serif");
+}
+
+@font-face {
+    font-family: andy;
+    src: local("Segoe UI Emoji");
+    unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+    float:left;
+    width: 100%;
+}
+
+#content {
+    padding-left: 1em;
+    padding-right: 1em; 
+    max-width: 8in;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10em;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #content {
+	padding-left: 3%;
+	padding-right: 3%;
+    }
+}
+
+/*
+ * Footer 
+ */
+
+#sidebar {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+    background-color: #efefef;
+}
+
+#sidebar p {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+
+/*
+ * Header
+ */
+
+
+#header {
+    background-color: #303030;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*
+* Separator
+*/
+hr {
+    background: url('/resources/images/hr.png') no-repeat center;
+    background-size: contain;
+    border-width: 0;
+    height: 4em;
+}
+
+.separator {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 0.5em;
+}
+
+
+/*
+ *  Post footer
+ */
+
+.date {
+    margin-top: 1em;
+    text-align: right;
+}
+
+
+/*
+ * Linkblog
+ */
+.links .link {
+    margin-bottom: 1em;
+}
+
+.links .date {
+    float: right;
+    margin-top: 0;
+}
+
+.links .commentary {
+    padding-left: 2em;
+}
+
+/*
+ * Footnotes
+ */
+
+#footnotes {
+    padding-top: 2em;
+}
+
+h2.footnotes {
+    display: none;
+}
+
+#footnotes sup {
+    float:left;
+    padding-right: 1em;
+}
+
+#footnotes p {
+    margin-top: 0;
+}
+
+/*
+ * Links
+ */
+h1 a {
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+}
+
+
+  ul.links { list-style-type: none; }
+  ul.links li:before { content: "\01f517"; width: 1.4em; float: left; }
+  ul.links li { text-indent: -1.4em; }
+
+
+/*
+* Navigation
+*/
+a.next { float: right; }
+
+
+/* 
+ * Normal elements
+ */
+
+img {
+    border: #dddddd 2px solid;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 90%;
+    height: auto;
+}
+
+pre {
+    overflow: auto;
+    margin: 3%;
+    padding: 10px;
+    border: #dddddd 2px solid;
+    font-size: 1em;
+}
+
+code {
+    font-size: 1em;
+    border: 2px dotted #dddddd;
+    padding: 2px;
+    word-break: break-word;
+}
+
+pre code {
+    border: none;
+}
+
+blockquote {
+    border-left: 2px dotted #dddddd;
+    border-right: 2px dotted #dddddd;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span.underline {
+    border-bottom: 1px solid;
+}
+
+p {
+    text-align: justify;
+}
+
+p.lede {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+a {
+    word-break: break-word;
+    border-bottom: #dddddd dotted 2px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1.0em;
+}

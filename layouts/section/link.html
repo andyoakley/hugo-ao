@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+
+<p class="lede"></p>
+
+<main class="links">
+
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ range $paginator.Pages }}
+  <div class="link">
+  <div class="date"><time datetime="{{ .Date.Format "2006-01-30" }}">{{ .Date.Format "Jan 2" }}</time></div>
+  <a href="{{ .Params.ref}}">{{ .Title }}</a>
+  <div class="commentary">{{ .Content }}</div>
+  </div>
+    {{ end }}
+    
+
+</main>
+
+{{ partial "pagination.html" . }}
+
+
+{{ partial "foot.html" . }}
+

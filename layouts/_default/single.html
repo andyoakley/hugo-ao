@@ -1,0 +1,10 @@
+{{ partial "head.html" . }}
+
+<main class="posts">
+  <p>{{ .Render "content" }}</p>
+
+  <div class="date"><time datetime="{{ .Date.Format "2006-01-30" }}">{{ .Date.Format "Jan 2, 2006" }}</time></div>
+
+</main>
+
+{{ partial "foot.html" . }}
