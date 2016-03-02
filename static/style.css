@@ -272,3 +272,7 @@ h2 {
 h3 {
     font-size: 1.0em;
 }
+
+li ol {
+    list-style-type: lower-alpha;
+}
